@@ -49,6 +49,52 @@ header
 	width: 100%;
 }
 
+.wand-wars ul
+{
+	margin: 2em auto -2em;
+	height: 4em;
+	text-align: center;
+
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.wand-wars ul li
+{
+	float: left;
+	padding: 0 0.5em;
+	height: 4em;
+}
+
+.wand-wars ul li a
+{
+	opacity: 0.9;
+	height: 1em;
+	display: block;
+	color: #46d;
+	background: #000;
+	font-size: 1.25em;
+	border-radius: 0.3em;
+	padding: 0.25em 2em;
+	margin-bottom: 0.25em;
+	margin-top: 0em;
+
+	box-shadow: 0 0.25em 0 #46d;
+}
+
+.wand-wars ul li a:hover
+{
+	color: #fff;
+	box-shadow: 0 0 0 #46d;
+	margin-top: 0.25em;
+	margin-bottom: 0;
+
+	transition: margin 0.1s ease-in-out, box-shadow 0.1s ease-in-out, color 0.1s ease;
+	-webkit-transition: margin 0.1s ease-in-out, box-shadow 0.1s ease-in-out, color 0.1s ease;
+	-moz-transition: margin 0.1s ease-in-out, box-shadow 0.2s ease-in-out, color 0.1s ease;
+}
+
 .content-row
 {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
