@@ -1,0 +1,150 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+html, body
+{
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background: #000;
+	color: #fff;
+}
+
+header
+{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+	background: url('../img/Wand_Wars_header_background.png') no-repeat center center;
+	width: 100%;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+@-webkit-keyframes bob
+{
+  0%   { margin-top: 20px; margin-bottom: 20px; }
+	50%  { margin-top: 40px; margin-bottom: 0px; }
+	100% { margin-top: 20px; margin-bottom: 20px; }
+}
+@keyframes bob
+{
+  0%   { margin-top: 20px; margin-bottom: 20px; }
+	50%  { margin-top: 40px; margin-bottom: 0px; }
+	100% { margin-top: 20px; margin-bottom: 20px; }
+}
+
+.wand-wars
+{
+	margin: 0 auto;
+	padding: 5em 0 7em;
+	text-align: center;
+	max-width: 1107px;
+}
+
+.wand-wars img
+{
+	-webkit-animation: bob 3s infinite;
+	animation: bob 3s infinite;
+	width: 100%;
+}
+
+.content-row
+{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+	content: "";
+  display: table;
+  clear: both;
+
+	margin: 0 auto;
+	padding: 3em 1.5em;
+	max-width: 960px;
+	font-size: 1.25em;
+}
+
+.about
+{
+	width: 70%;
+}
+
+.col
+{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+	padding-right: 10%;
+	float: left;
+}
+
+.who
+{
+	width: 30%;
+	padding: 0;
+}
+
+.who li
+{
+	margin-bottom: 1.5em;
+}
+
+.who .name
+{
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
+
+.who .what
+{
+	font-size: 1em;
+}
+
+.who a
+{
+	color: #fff;
+}
+
+.who a:hover .name
+{
+	color: #46d;
+}
+
+strong
+{
+	font-weight: 700;
+}
+
+p
+{
+	font-weight: 300;
+	margin-top: 1em;
+	line-height: 1.6em;
+}
+
+h1
+{
+	font-weight: 400;
+	font-size: 1.75em;
+	margin-bottom: 1em;
+}
+
+a
+{
+	color: #46d;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 980px)
+{
+
+}
+
+@media screen and (max-width: 600px)
+{
+	html, body
+	{
+		font-size: 80%;
+	}
+}
