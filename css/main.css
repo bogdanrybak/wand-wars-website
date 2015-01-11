@@ -93,22 +93,33 @@ header
 .who .name
 {
 	font-size: 1.25em;
-	line-height: 1.25em;
+	line-height: 1.5em;
 }
 
-.who .what
+.who img
 {
-	font-size: 1em;
+	vertical-align: middle;
+	border-radius: 1em;
+	width: 2em;
+	height: 2em;
+	margin-right: 1em;
+	transition: margin 0.2s ease;
 }
 
 .who a
 {
+	transition: color 0.2s ease;
 	color: #fff;
 }
 
-.who a:hover .name
+.who a:hover
 {
 	color: #46d;
+}
+
+.who a:hover img
+{
+	margin-right: 0.5em;
 }
 
 strong
@@ -138,7 +149,12 @@ a
 
 @media screen and (max-width: 980px)
 {
-
+	.about, .who
+	{
+		width: 100%;
+		float: none;
+		margin-bottom: 2em;
+	}
 }
 
 @media screen and (max-width: 600px)
