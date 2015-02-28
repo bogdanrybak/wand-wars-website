@@ -2,7 +2,7 @@
 
 html, body
 {
-	font-size: 100%;
+	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	background: #000;
@@ -15,7 +15,7 @@ header
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 
-	background: url('../img/Wand_Wars_header_background.png') no-repeat center center;
+	background: url('../img/header_background.png') no-repeat center center;
 	width: 100%;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
@@ -23,26 +23,26 @@ header
 
 @-webkit-keyframes bob
 {
-  0%   { margin-top: 20px; margin-bottom: 20px; }
-	50%  { margin-top: 40px; margin-bottom: 0px; }
-	100% { margin-top: 20px; margin-bottom: 20px; }
+  0%   { margin-top: 10px; margin-bottom: 10px; }
+	50%  { margin-top: 20px; margin-bottom: 0px; }
+	100% { margin-top: 10px; margin-bottom: 10px; }
 }
 @keyframes bob
 {
-  0%   { margin-top: 20px; margin-bottom: 20px; }
-	50%  { margin-top: 40px; margin-bottom: 0px; }
-	100% { margin-top: 20px; margin-bottom: 20px; }
+  0%   { margin-top: 10px; margin-bottom: 10px; }
+	50%  { margin-top: 20px; margin-bottom: 0px; }
+	100% { margin-top: 10px; margin-bottom: 10px; }
 }
 
 .wand-wars
 {
 	margin: 0 auto;
-	padding: 5em 0 7em;
+	padding: 2em 0 1em;
 	text-align: center;
-	max-width: 1107px;
+	max-width: 760px;
 }
 
-.wand-wars img
+.wand-wars #logo
 {
 	-webkit-animation: bob 3s infinite;
 	animation: bob 3s infinite;
@@ -51,48 +51,39 @@ header
 
 .wand-wars ul
 {
-	margin: 4em auto -2em;
-	height: 4em;
+	margin-top: -5em;
 	text-align: center;
-
-	content: "";
-  display: table;
-  clear: both;
+  display: inline-block;
+  padding-bottom: 2em;
 }
 
 .wand-wars ul li
 {
-	float: left;
+	display: inline-block;
 	padding: 0 0.5em;
-	height: 4em;
+}
+
+.wand-wars ul li img
+{
+	margin: 1em auto;
+	display: block;
 }
 
 .wand-wars ul li a
 {
-	opacity: 0.9;
-	height: 1em;
 	display: block;
-	color: #46d;
-	background: #000;
+	color: #fff;
 	font-size: 1.25em;
-	border-radius: 0.3em;
 	padding: 0.25em 2em;
 	margin-bottom: 0.25em;
 	margin-top: 0em;
-
-	box-shadow: 0 0.25em 0 #46d;
+	text-transform: uppercase;
 }
 
 .wand-wars ul li a:hover
 {
-	color: #fff;
-	box-shadow: 0 0 0 #46d;
-	margin-top: 0.25em;
-	margin-bottom: 0;
-
-	transition: margin 0.1s ease-in-out, box-shadow 0.1s ease-in-out, color 0.1s ease;
-	-webkit-transition: margin 0.1s ease-in-out, box-shadow 0.1s ease-in-out, color 0.1s ease;
-	-moz-transition: margin 0.1s ease-in-out, box-shadow 0.2s ease-in-out, color 0.1s ease;
+	opacity: 0.8;
+	color: #dadada;
 }
 
 .content-row
@@ -125,29 +116,61 @@ header
 	float: left;
 }
 
-.who
+.screenshots
+{
+	margin-left: -15px;
+}
+
+.screenshots img
+{
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border-radius: 2px;
+	width: 158px;
+	margin-left: 15px;
+}
+
+.right-col
 {
 	width: 30%;
 	padding: 0;
 }
 
+.grundelf
+{
+	margin-top: 3em;
+	margin-bottom: 3em;
+	text-align: left;
+}
+
+.fa
+{
+	margin-right: 5px;
+}
+
+.who
+{
+	margin-bottom: 2em;
+}
+
 .who li
 {
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 
 .who .name
 {
-	font-size: 1.25em;
+	text-transform: uppercase;
+	font-size: 1em;
 	line-height: 1.5em;
 }
 
 .who img
 {
 	vertical-align: middle;
-	border-radius: 1em;
-	width: 2em;
-	height: 2em;
+	border-radius: 3px;
+	width: 3em;
+	height: 3em;
 	margin-right: 1em;
 	transition: margin 0.2s ease;
 }
@@ -168,6 +191,90 @@ header
 	margin-right: 0.5em;
 }
 
+.soundcloud-embed
+{
+	padding-top: 2em;
+}
+
+.soundcloud-embed .g-background-default
+{
+	background: #dadada;
+}
+
+.soundcloud-embed iframe
+{
+	margin-bottom: 2em;
+}
+
+.newsletter-signup
+{
+	margin-bottom: 2em;
+}
+
+.newsletter-signup input
+{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: #fff;
+}
+
+.mc-field-group
+{
+	margin-bottom: 1em;
+}
+
+.mc-field-group h1
+{
+	margin-bottom: 0.5em;
+}
+
+#mce-EMAIL
+{
+	background: #000;
+	border: 0;
+	border-bottom: 1px solid #dadada;
+	padding: 0.5em 0;
+	width: 190px;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#mc-embedded-subscribe
+{
+	padding: 0.4em 0.5em;
+	background: #024;
+	border-radius : 5px;
+	border: 0;
+	width: 190px;
+	font-size: 1.25em;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#mc-embedded-subscribe:hover
+{
+	background: #07f;
+}
+
+#mc-embedded-subscribe:hover
+{
+	cursor: pointer;
+}
+
+a.white-link
+{
+	color: #fff;
+}
+
+a.white-link:hover
+{
+	color: #07f;
+}
+
 strong
 {
 	font-weight: 700;
@@ -178,13 +285,14 @@ p
 	font-weight: 300;
 	margin-top: 1em;
 	line-height: 1.6em;
+	margin-bottom: 1em;
 }
 
 h1
 {
 	font-weight: 400;
 	font-size: 1.75em;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 a
@@ -207,6 +315,6 @@ a
 {
 	html, body
 	{
-		font-size: 80%;
+		font-size: 12px;
 	}
 }

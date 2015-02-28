@@ -12,11 +12,14 @@
     <meta property="og:site_name" content="Wand Wars"> 
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://wandwars.com"> 
-
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="js/magnific-popup.js" type="text/javascript"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,22 +36,33 @@
 <div class="wrapper">
     <header>
         <div class="wand-wars">
-            <img src="img/Wand_Wars_header_logo.png" alt="Wand Wars Game">
+            <img id="logo" src="img/Logo_200percent.png" alt="Wand Wars Game">
             <ul>
-                <li><a href="mailto:wandwars@gmail.com" title="Contact us">Contact</a></li><li>
-                <a href="http://wandwars.tumblr.com/" title="Development log">Dev Log</a></li>
+                <li><a href="mailto:wandwars@gmail.com" title="Contact us"><img src="/img/contact.png">Contact</a></li><li>
+                <a href="http://wandwars.tumblr.com/" title="Development log"><img src="/img/devlog.png">Dev Log</a></li>
             </ul>
         </div>
     </header>
     <div class="content-row">
         <div class="col about">
-            <h1>The Game</h1>
-            <p><strong>Wand Wars</strong> is a 2D local arena bloodsport currently in development.</p>
-            <p>Partake in the superhip event where Wizlords and Wizladies duke it out in magickal combat not dissimilar to our own court-based sports. The skillz and fortitude demonstrated by participants inspire demons and angels alike. The pain is temporary, the glory &mdash; eternal.</p>
+            <h1>Wand Wars</h1>
+            <p>Challenge your friends in a local multiplayer arena and dribble ever-growing balls of pure magic!</p>
+            <p>Ride your brooms over otherworldly courts and outmaneuver your opponents with skillful dashes and dodges. Collect powerups to keep the game on edge, hone your sense of timing and unleash arcane spells.</p>
+            <p>Up to 4 players, keyboard and controllers supported. Featuring pixel art with a modern twist and an original soundtrack. The game is currently in development.</p>
+            <div class="screenshots">
+                <a class="gallery" href="/img/screen_0.png"><img src="/img/screen_0_thumb.png" alt="Wand wars screenshots"></a>
+                <a class="gallery" href="/img/screen_2.png"><img src="/img/screen_2_thumb.png" alt="Wand wars screenshots"></a>
+                <a class="gallery" href="/img/screen_1.png"><img src="/img/screen_1_thumb.png" alt="Wand wars screenshots"></a>
+            </div>
+            <div class="soundcloud-embed">
+                <h1>Soundtrack</h1>
+                <iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193419496&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+                <iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193419499&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+            </div>
         </div>
-        <div class="col who">
-            <h1>The Team</h1>
-            <ul>
+        <div class="col right-col">
+            <h1>We are &hellip;</h1>
+            <ul class="who">
                 <li>
                     <a href="https://twitter.com/citystreetlight">
                     <img src="https://pbs.twimg.com/profile_images/540245562964992000/BvPTOfV2.png">
@@ -68,8 +82,42 @@
                     </a>
                 </li>
             </ul>
+            <p class="grundelf"><img src="/img/grundelf.gif"></p>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup" class="newsletter-signup">
+            <form action="//wandwars.us10.list-manage.com/subscribe/post?u=4b7a3d92ce9f798a3f6889827&amp;id=d23ce3f3fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                
+            <div class="mc-field-group">
+                <h1><i class="fa fa-envelope"></i> Newsletter</h1>
+                <input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_4b7a3d92ce9f798a3f6889827_d23ce3f3fd" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <h1><a class="white-link" href="http://wandwars.tumblr.com/" title="Development log"><i class="fa fa-tumblr-square"></i> Follow us!</a></h1>
+            <!--End mc_embed_signup-->
         </div>
     </div>
 </div>
+<script>
+$(document).ready(function() {
+
+    $('.gallery').magnificPopup({
+        gallery: {
+          enabled: true
+        },
+        type: 'image'
+    });
+
+});
+
+</script>
 </body>
 </html>
