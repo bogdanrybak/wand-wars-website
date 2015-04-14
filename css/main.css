@@ -44,43 +44,61 @@ header
 
 .wand-wars #logo
 {
+	position: relative;
 	-webkit-animation: bob 3s infinite;
 	animation: bob 3s infinite;
 	width: 100%;
+	z-index: 50;
 }
 
-.wand-wars ul
+.greenlight
 {
-	margin-top: -5em;
-	text-align: center;
-  display: inline-block;
-  padding-bottom: 2em;
+	position: relative;
+	z-index: 100;
 }
 
-.wand-wars ul li
+.greenlight .vote-button
+{
+	margin-left: 10px;
+}
+
+.wand-wars-menu
+{
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+.wand-wars-menu ul
+{
+	text-align: left;
+  display: inline-block;
+}
+
+.wand-wars-menu ul li
 {
 	display: inline-block;
-	padding: 0 0.5em;
+	padding: 0 0;
 }
 
-.wand-wars ul li img
+.wand-wars-menu ul li img
 {
 	margin: 1em auto;
 	display: block;
 }
 
-.wand-wars ul li a
+.wand-wars-menu ul li a
 {
 	display: block;
 	color: #fff;
-	font-size: 1.25em;
-	padding: 0.25em 2em;
+	font-size: 0.875em;
+	padding: 0.25em 0em;
 	margin-bottom: 0.25em;
+	margin-right: 2em;
 	margin-top: 0em;
 	text-transform: uppercase;
 }
 
-.wand-wars ul li a:hover
+.wand-wars-menu ul li a:hover
 {
 	opacity: 0.8;
 	color: #dadada;
@@ -88,6 +106,8 @@ header
 
 .content-row
 {
+	position: relative;
+
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -97,13 +117,15 @@ header
   clear: both;
 
 	margin: 0 auto;
-	padding: 3em 1.5em;
+	padding: 3em 1.5em 1em;
 	max-width: 960px;
+	width: 100%;
 	font-size: 1.25em;
 }
 
 .about
 {
+	position: relative;
 	width: 70%;
 }
 
@@ -114,6 +136,11 @@ header
   box-sizing: border-box;         /* Opera/IE 8+ */
 	padding-right: 10%;
 	float: left;
+}
+
+.video-col
+{
+	width: 100%;
 }
 
 .screenshots
@@ -156,7 +183,7 @@ header
 
 .who
 {
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 
 .who li
@@ -171,8 +198,17 @@ header
 	line-height: 1.5em;
 }
 
+.who .role
+{
+	text-transform: uppercase;
+	font-size: 0.875em;
+	line-height: 1em;
+	color: #dadada;
+}
+
 .who img
 {
+	float: left;
 	vertical-align: middle;
 	border-radius: 3px;
 	width: 3em;
@@ -271,6 +307,24 @@ header
 	cursor: pointer;
 }
 
+.video-container {
+	margin-top: -6em;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  box-shadow: 0px 0px 40px #236;
+  z-index: 100;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 a.white-link
 {
 	color: #fff;
@@ -309,7 +363,7 @@ a
 
 @media screen and (max-width: 980px)
 {
-	.about, .who
+	.about, .who, .right-col
 	{
 		width: 100%;
 		float: none;
@@ -322,5 +376,21 @@ a
 	html, body
 	{
 		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.greenlight img
+	{
+		width: 100px;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.greenlight .vote-button
+	{
+		margin-left: auto;
 	}
 }
