@@ -3,8 +3,7 @@
 html, body
 {
 	font-size: 16px;
-	font-family: 'Droid Serif', sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 	background: #000;
 	color: #fff;
 }
@@ -59,16 +58,21 @@ header, footer
 	margin: 0 10px;
 }
 
-.steam-button {
+.platform-button {
 	display: inline-block;
 	width: 159px;
 	height: 59px;
 	background: url('/img/steam.png') no-repeat top left;
 	vertical-align: middle;
 	margin: 0 10px;
+	font-size: 1.125em;
+	vertical-align: center;
+	line-height: 59px;
+	font-weight: 600;
+	margin-bottom: 0.5em;
 }
 
-.steam-button:hover {
+.platform-button:hover {
 	background: url('/img/steam.png') no-repeat bottom left;
 }
 
@@ -206,17 +210,15 @@ header, footer
 .screenshots-row {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-top: 3em;
 }
 
 .screenshots {
-	box-shadow: 0px 0px 40px #236;
+	box-shadow: 0px 0px 40px #0e0e0e;
 }
 
 .screenshot {
 	position: relative;
 	display: inline-block;
-	width: 33.333333333333%;
 	margin: 0;
 /*	margin-right: 3.125%;
 	margin-bottom: 3.125%;*/
@@ -231,7 +233,7 @@ header, footer
 .screenshot h1 {
 	font-size: 1.125em;
 	margin-bottom: 0.75em;
-	text-transform: uppercase;
+	text-transform : uppercase;
 }
 
 .screenshot p {
@@ -259,17 +261,34 @@ header, footer
 
 .screenshot .gallery img:hover {
 	position: relative;
-	box-shadow: 0px 0px 70px #8D0EB7;
+	box-shadow: 0px 0px 5px #e2e2e2;
 	z-index: 10;
 }
 
-.screenshot .description {
-	font-size: 16px;
-	font-family: 'Droid Sans';
-	position: absolute;
+.description {
+	font-size: 1em;
 	top: 0;
-	padding: 7%;
+	background: #1b1b1b;
+	color: #fff;
+	padding: 2em 4em;
 	z-index: 1;
+}
+
+.description h1 {
+	color: #006fea;
+	margin-bottom: 0.5em;
+	color: #00bbff;
+}
+
+.description ul {
+	margin-bottom: 1em;
+}
+
+.description li {
+	margin-left: 1.2em;
+	padding-left: 0.2em;
+	list-style-type: circle;
+	line-height: 1.7;
 }
 
 .right-col
@@ -515,12 +534,12 @@ a.white-link:hover
 
 strong
 {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 p
 {
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 1em;
 	line-height: 1.7em;
 	margin-bottom: 1em;
@@ -528,7 +547,7 @@ p
 
 h1
 {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.75em;
 	margin-bottom: 1.5em;
 	line-height: 1.7;
@@ -548,14 +567,6 @@ a:hover
 
 @media screen and (max-width: 787px)
 {
-	.screenshot, .screenshot.col3 {
-		width: 50%;
-	}
-
-	.screenshot.col2 {
-		margin-right: 0;
-	}
-
 	.footer-col, footer-col.col3 {
 		width: 48%;
 		margin-right: 4%;
@@ -571,10 +582,7 @@ a:hover
 {
 	.platforms {
 		position: relative;
-		margin-top: -8em;
-		font-size: 10px;
 		text-align: center;
-		bottom: 0;
 	}
 
 	.wand-wars {
@@ -603,29 +611,22 @@ a:hover
 
 @media screen and (max-width: 600px)
 {
-	html, body
+	.screenshots-row
 	{
-		font-size: 16px;
+		font-size: 14px;
 	}
 
-	.screenshots {
-		width: 300px;
-		margin: 0 auto;
+	.description {
+		padding: 1em 1.5em;
 	}
 
-	.screenshot, .screenshot.col2, .screenshot.col3 {
-		display: block;
-		float none;
-		margin: 0 auto;
-		width: 300px;
+	.description h1 {
+		font-size: 1.5em;
 	}
-
-	.screenshot .description {
-		line-height: 1.7;
-	}
-
-	.screenshot img {
-		box-shadow: 0 0 0 #236;
+	
+	.platforms
+	{
+		margin-top: 3em;
 	}
 }
 
@@ -645,8 +646,9 @@ a:hover
 		margin-bottom: 3em;
 	}
 
-	.platforms {
-		margin-top: -2em;
+	.platforms
+	{
+		margin-top: 5em;
 	}
 }
 
