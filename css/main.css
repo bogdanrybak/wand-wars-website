@@ -19,10 +19,15 @@ html {
 
 header, footer
 {
-	background: url('../img/header_background.png') no-repeat center center;
+	background: url('../img/top_background.jpeg') no-repeat center center;
 	width: 100%;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
+}
+
+header
+{
+	background-size: cover;
 }
 
 @-webkit-keyframes bob
@@ -46,16 +51,16 @@ header, footer
 
 .platforms {
 	position: absolute;
-	bottom: 5em;
+	bottom: 13em;
 	text-align: center;
 	width: 100%;
 	z-index: 10;
 }
 
 .buy-now {
-	display: inline-block;
+	display: block;
+	margin: 0 auto 2em;
 	vertical-align: middle;
-	margin: 0 10px;
 }
 
 .platform-button {
@@ -84,23 +89,16 @@ header, footer
 	margin: 0 10px;
 }
 
-.top-bar {
-	padding: 1em 0 0;
-}
-
-.top-logo {
-	position: absolute;
-}
-
 .top-logo img {
 	width: 150px;
+	margin-bottom: -9px;
 }
 
 .wand-wars
 {
 	position: relative;
 	margin: 0 auto;
-	padding: 2em 0 1em;
+	padding: 500px 0 1em;
 	text-align: center;
 	max-width: 760px;
 	z-index: 0;
@@ -413,7 +411,7 @@ header, footer
 	box-shadow: 0px 0px 40px #236;
 	z-index: 100;
 	margin: 0 auto;
-	margin-top: -3em;
+	margin-top: -8em;
 }
 .video-container iframe,
 .video-container object,
@@ -576,6 +574,27 @@ a:hover
 	.footer-col.col2 {
 		margin-right: 0%;
 	}
+
+	header
+	{
+		background-size: 150% auto;
+	}
+
+	.video-container
+	{
+		margin-top: 0;
+	}
+
+	.wand-wars {
+		z-index: 2;
+		padding-top: 15%;
+	}
+
+	.platforms
+	{
+		bottom: auto;
+		position: relative;
+	}
 }
 
 @media screen and (max-width: 715px)
@@ -583,10 +602,6 @@ a:hover
 	.platforms {
 		position: relative;
 		text-align: center;
-	}
-
-	.wand-wars {
-		z-index: 2;
 	}
 
 	.platforms h1 {
@@ -628,6 +643,11 @@ a:hover
 	{
 		margin-top: 3em;
 	}
+
+	header
+	{
+		background-size: 200% auto;
+	}
 }
 
 @media screen and (max-width: 460px)
@@ -650,16 +670,28 @@ a:hover
 	{
 		margin-top: 5em;
 	}
-}
 
-@media screen and (max-width: 400px)
-{
-	.top-logo {
+	ul li.top-logo {
 		display: none;
 	}
 
 	.social-bar {
 		text-align: center;
+	}
+
+	.wand-wars
+	{
+		padding-top: 0;
+	}
+
+	header
+	{
+		background-size: 280% auto;
+	}
+
+	.platforms
+	{
+		margin-top: 4em;
 	}
 }
 
@@ -671,5 +703,10 @@ a:hover
 
 	.screenshot {
 		font-size: 14px;
+	}
+
+	.platforms
+	{
+		margin-top: 2em;
 	}
 }
