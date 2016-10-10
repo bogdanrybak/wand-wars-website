@@ -71,7 +71,6 @@ header
 	vertical-align: middle;
 	margin: 0 10px;
 	font-size: 1.125em;
-	vertical-align: center;
 	line-height: 59px;
 	font-weight: 600;
 	margin-bottom: 0.5em;
@@ -92,6 +91,13 @@ header
 .top-logo img {
 	width: 150px;
 	margin-bottom: -9px;
+}
+
+.esrb
+{
+	position: absolute;
+	left: 10px;
+	top: 10px;
 }
 
 .wand-wars
@@ -563,6 +569,16 @@ a:hover
 	color: #07f;
 }
 
+.mobile
+{
+	display: none;
+}
+
+.desktop
+{
+	display: block;
+}
+
 @media screen and (max-width: 787px)
 {
 	.footer-col, footer-col.col3 {
@@ -595,6 +611,16 @@ a:hover
 		bottom: auto;
 		position: relative;
 	}
+
+	.mobile
+	{
+		display: block;
+	}
+
+	.desktop
+	{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 715px)
@@ -608,11 +634,6 @@ a:hover
 		display: none;
 	}
 
-	.buy-now {
-		display: block;
-		margin: 0 auto;
-	}
-
 	.short-description {
 		margin-top: -4.5em;
 		font-size: 14px;
@@ -624,7 +645,7 @@ a:hover
 	}
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 610px)
 {
 	.screenshots-row
 	{
@@ -647,6 +668,33 @@ a:hover
 	header
 	{
 		background-size: 200% auto;
+	}
+
+	.social-bar {
+		padding-right: 0;
+	}
+
+	.platform-button {
+		display: block;
+		padding: 15px 15px;
+		border-radius: 5px;
+		border-top: 1px solid #fff;
+		height: auto;
+		line-height: 1;
+		width: 150px;
+		background: #d10b80;
+		vertical-align: middle;
+		font-size: 1em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.buy-now {
+		margin-bottom: 0;
+	}
+
+	a.platform-button:hover {
+		background: #fff;
 	}
 }
 
@@ -693,6 +741,13 @@ a:hover
 	{
 		margin-top: 4em;
 	}
+
+	.esrb
+	{
+		left: auto;
+		right: 10px;
+	}
+
 }
 
 @media screen and (max-width: 360px)
